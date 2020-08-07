@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import './humanieStyles.css'
 import { BrowserRouter } from 'react-router-dom'
-import Template from './components/Template'
+import Routes from './components/Routes'
 
 class App extends Component {
   render () {
     return (
       <BrowserRouter>
-        <Template />
+        <Routes />
       </BrowserRouter>
     )
   }
