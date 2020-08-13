@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Col, Row } from 'reactstrap'
 import HeaderPicture from '../components/HeaderPicture'
 
 class About extends Component {
@@ -18,12 +19,11 @@ class About extends Component {
           avec vous!
             </p>
             <h2 className='text-center display-5'>Qui est la créatrice derrière Humanie Design?</h2>
-            <div className='row mb-2'>
-              <div className='col-md-6 my-auto'>
+            <Row mb={2}>
+              <Col md={6} className='my-auto'>
                 <img className='img-fluid' src='assets/images/about/designer.jpg' alt='designer' />
-              </div>
-              <div className='col-md-6'>
-
+              </Col>
+              <Col md={6}>
                 <p className='my-3'>
               Je me présente, Alyssia Boutet, propriétaire et designer intérieur de Humanie Design Conception d&apos;espace.
               À
@@ -38,8 +38,9 @@ class About extends Component {
               leurs besoins spécifiques. De rendre le tout esthétique, fonctionnel et intemporel, car je veux offrir un
               environnement qui sera unique pour chaque client.
                 </p>
-              </div>
-            </div>
+              </Col>
+            </Row>
+
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const NavigationBar = () => {
   return (
-    <Navbar className='navbar-humanie' expand='md'>
+    <Navbar className='navbar-humanie fixed-top' expand='md'>
       <NavbarToggler />
       <NavbarBrand href='/' className='mr-auto'>
         <img src='./assets/logos/logo.png' alt='Logo' heigth='50' width='50' /> Humanie Design
