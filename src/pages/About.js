@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import { Col, Row } from 'reactstrap'
+import { Col, Row, Container } from 'reactstrap'
 import HeaderPicture from '../components/HeaderPicture'
 
 class About extends Component {
   render () {
     return (
-      <div className='container'>
+      <Container>
         <HeaderPicture path='/assets/headers/about.jpg' />
 
         <div className='row flex-nowrap justify-content-between align-items-center'>
@@ -43,7 +43,7 @@ class About extends Component {
 
           </div>
         </div>
-      </div>
+      </Container>
     )
   }
 }

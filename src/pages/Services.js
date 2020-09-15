@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Col, Row } from 'reactstrap'
+import { Col, Row, Container } from 'reactstrap'
 import HeaderPicture from '../components/HeaderPicture'
 import PropTypes from 'prop-types'
 import SERVICES from '../data/services'
@@ -35,7 +35,7 @@ const ServiceSection = ({ service, isLeft }) => {
 class Services extends Component {
   render () {
     return (
-      <div className='container'>
+      <Container>
         <HeaderPicture path='/assets/headers/services.jpg' />
         <div className='p-3 p-md-5' id='services'>
           <h1 className='text-center display-4'>Services</h1>
@@ -50,7 +50,7 @@ class Services extends Component {
             pour vous. Contactez-nous pour prendre rendez-vous et ainsi, discuter de votre projet. Il nous fera plaisir
             de vous aider !
         </footer>
-      </div>
+      </Container>
     )
   }
 }
