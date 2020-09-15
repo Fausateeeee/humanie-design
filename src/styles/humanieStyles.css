@@ -50,6 +50,11 @@ h2{
     text-align: justify;
 }
 
+#submitButton {
+    background-color: #CAD3E1;
+    border: #CAD3E1;
+}
+
 .navbar-humanie {
     background-color: rgb(202, 211, 225) ;
 }
