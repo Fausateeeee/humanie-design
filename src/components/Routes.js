@@ -18,6 +18,7 @@ class Routes extends Component {
           <Route exact path='/apropos' component={About} />
           <Route exact path='/services' component={Services} />
           <Route exact path='/realisations' component={Realisations} />
+          <Route path='/realisations/:projectId' component={Realisations} />
           <Route exact path='/contact' component={Contact} />
           <Redirect to='/' />
         </Switch>
