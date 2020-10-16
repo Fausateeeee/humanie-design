@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Media, Container, Row, Col } from 'reactstrap'
+import { Row } from 'reactstrap'
 import PropTypes from 'prop-types'
 
 // import { Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap'
@@ -10,7 +10,7 @@ class Project extends Component {
       console.log(picture)
       return (
         <Row key={picture.id}>
-          <img className='img-fluid' src={picture.image} />
+          <img className='img-fluid' src={picture.image} alt='project' />
         </Row>
       )
     })

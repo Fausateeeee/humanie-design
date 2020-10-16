@@ -22,7 +22,7 @@ const ProjectsNavigator = () => {
 }
 
 const ProjectExplorer = ({ id }) => {
-  const project = PROJECTS.filter((el) => { return el.id == id })[0]
+  const project = PROJECTS.filter((el) => { return el.id.toString() === id })[0]
   return <Project project={project} />
 }
 
@@ -44,5 +44,8 @@ RealisationsPage.propTypes = {
       projectId: PropTypes.number
     }
   }
+}
 
+ProjectExplorer.propTypes = {
+  id: PropTypes.number
 }

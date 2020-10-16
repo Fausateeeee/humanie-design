@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Media, Container, Col } from 'reactstrap'
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
 

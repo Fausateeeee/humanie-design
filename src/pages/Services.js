@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Col, Row, Container } from 'reactstrap'
+import { Col, Row } from 'reactstrap'
 import { Layout } from '../components/index'
 import PropTypes from 'prop-types'
 import SERVICES from '../data/services'
