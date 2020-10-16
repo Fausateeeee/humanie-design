@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Col, Row, Container } from 'reactstrap'
-import { HeaderPicture } from '../components/index'
+import { Layout } from '../components/index'
 import PropTypes from 'prop-types'
 import SERVICES from '../data/services'
 // import { Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap'
@@ -32,11 +32,10 @@ const ServiceSection = ({ service, isLeft }) => {
   )
 }
 
-class ServicesPages extends Component {
+class Services extends Component {
   render () {
     return (
-      <Container>
-        <HeaderPicture path='/assets/headers/services.jpg' />
+      <>
         <div className='p-3 p-md-5' id='services'>
           <h1 className='text-center display-4'>Services</h1>
         </div>
@@ -50,8 +49,14 @@ class ServicesPages extends Component {
             pour vous. Contactez-nous pour prendre rendez-vous et ainsi, discuter de votre projet. Il nous fera plaisir
             de vous aider !
         </footer>
-      </Container>
+      </>
     )
+  }
+}
+
+class ServicesPage extends Component {
+  render () {
+    return <Layout pageActive='service' headerPicture='/assets/headers/services.jpg' pageComponent={<Services />} />
   }
 }
 
@@ -66,4 +71,4 @@ ServiceSection.propTypes = {
   isLeft: PropTypes.bool
 }
 
-export default ServicesPages
+export default ServicesPage

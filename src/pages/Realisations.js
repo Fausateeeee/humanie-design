@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Row, Col, Container } from 'reactstrap'
-import { HeaderPicture } from '../components/index'
+import { Row, Col } from 'reactstrap'
+import { Layout } from '../components/index'
 import ProjectThumbnail from '../components/ProjectThumbnail'
 import Project from '../components/Project'
 import PropTypes from 'prop-types'
@@ -29,12 +29,9 @@ const ProjectExplorer = ({ id }) => {
 class RealisationsPage extends Component {
   render () {
     console.log(this.props.match.params.projectId)
-
+    const project = this.props.match.params.projectId ? <ProjectExplorer id={this.props.match.params.projectId} /> : <ProjectsNavigator />
     return (
-      <Container>
-        <HeaderPicture path='/assets/headers/realisations.jpg' />
-        {this.props.match.params.projectId ? <ProjectExplorer id={this.props.match.params.projectId} /> : <ProjectsNavigator />}
-      </Container>
+      <Layout pageActive='realisations' headerPicture='/assets/headers/realisations.jpg' pageComponent={project} />
     )
   }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { HeaderPicture } from '../components/index'
-import { Form, FormGroup, Button, Label, Input, Col, Row, Container } from 'reactstrap'
+import { Layout } from '../components/index'
+import { Form, FormGroup, Button, Label, Input, Col, Row } from 'reactstrap'
 // import { Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap'
 
 const ContactForm = () => {
@@ -51,31 +51,34 @@ const ContactForm = () => {
   )
 }
 
-class ContactPage extends Component {
+class Contact extends Component {
   render () {
     return (
-      <Container>
-        <HeaderPicture path='/assets/headers/contact.jpg' />
-        <div className='p-3 p-md-5' id='services'>
-          <h1 className='text-center display-4'>Contactez-Nous</h1>
-          <Row mb={2}>
-            <p className='my-3'>
+      <div className='p-3 p-md-5' id='services'>
+        <h1 className='text-center display-4'>Contactez-Nous</h1>
+        <Row mb={2}>
+          <p className='my-3'>
               Vous avez besoin d&apos;aide avec l&apos;un de vos projets? Nous sommes là pour vous aider à le
               réaliser.
               Prendre rendez-vous avec nous par courriel et/ou par téléphone. Laissez-nous savoir en quoi
               consiste
               votre projet via notre site et nous vous contacterons!
-            </p>
-          </Row>
-          <ContactForm />
-          <ul>
-            <li>Humanie Design Conception d&apos;espace</li>
-            <li>581-982-0378 </li>
-          </ul>
+          </p>
+        </Row>
+        <ContactForm />
+        <ul>
+          <li>Humanie Design Conception d&apos;espace</li>
+          <li>581-982-0378 </li>
+        </ul>
 
-        </div>
-      </Container>
+      </div>
     )
+  }
+}
+
+class ContactPage extends Component {
+  render () {
+    return <Layout pageActive='contact' headerPicture='/assets/headers/contact.jpg' pageComponent={<Contact />} />
   }
 }
 

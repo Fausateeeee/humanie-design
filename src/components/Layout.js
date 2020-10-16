@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { HeaderPicture, NavigationBar } from './index'
+import { Container } from 'reactstrap'
 
-class Layout extends Component {
+export class Layout extends Component {
   render () {
     return (
       <>
         <NavigationBar active={this.props.pageActive} />
-        <HeaderPicture path={this.props.headerPicture} />
-        {this.props.pageComponent}
+        <Container>
+          <HeaderPicture path={this.props.headerPicture} />
+          {this.props.pageComponent}
+        </Container>
       </>
     )
   }
@@ -19,5 +22,3 @@ Layout.propTypes = {
   headerPicture: PropTypes.string,
   pageComponent: PropTypes.element
 }
-
-export default Layout

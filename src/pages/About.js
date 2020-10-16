@@ -1,30 +1,26 @@
 import React, { Component } from 'react'
-import { Col, Row, Container } from 'reactstrap'
-import { HeaderPicture } from '../components/index'
+import { Col, Row } from 'reactstrap'
+import { Layout } from '../components/index'
 
-class AboutPage extends Component {
-  render () {
-    return (
-      <Container>
-        <HeaderPicture path='/assets/headers/about.jpg' />
-
-        <div className='row flex-nowrap justify-content-between align-items-center'>
-          <div className='p-3 p-md-5'>
-            <h1 className='text-center display-4'>À PROPOS</h1>
-            <p className='lead my-4' id='about'>
+const About = () => {
+  return (
+    <div className='row flex-nowrap justify-content-between align-items-center'>
+      <div className='p-3 p-md-5'>
+        <h1 className='text-center display-4'>À PROPOS</h1>
+        <p className='lead my-4' id='about'>
           Humanie Design se spécialise dans la conception de projet résidentiel, commercial et adapté. Chaque concept
           est personnalisé en fonction de votre environnement et de vos besoins afin d&apos;en arriver à un projet qui vous
           représente. De plus, c&apos;est avec l&apos;écoute, la détermination et la passion du design que notre équipe sera vous
           guider. Nous sommes toujours prêts à concevoir de nouveaux projets et à partager nos nouvelles connaissances
           avec vous!
-            </p>
-            <h2 className='text-center display-5'>Qui est la créatrice derrière Humanie Design?</h2>
-            <Row mb={2}>
-              <Col md={6} className='my-auto'>
-                <img className='img-fluid' src='assets/images/about/designer.jpg' alt='designer' />
-              </Col>
-              <Col md={6}>
-                <p className='my-3'>
+        </p>
+        <h2 className='text-center display-5'>Qui est la créatrice derrière Humanie Design?</h2>
+        <Row mb={2}>
+          <Col md={6} className='my-auto'>
+            <img className='img-fluid' src='assets/images/about/designer.jpg' alt='designer' />
+          </Col>
+          <Col md={6}>
+            <p className='my-3'>
               Je me présente, Alyssia Boutet, propriétaire et designer intérieur de Humanie Design Conception d&apos;espace.
               À
               la suite de mes études en technique en design intérieur, j&apos;ai créé mon entreprise. Cela fait maintenant 3
@@ -37,14 +33,18 @@ class AboutPage extends Component {
               de
               leurs besoins spécifiques. De rendre le tout esthétique, fonctionnel et intemporel, car je veux offrir un
               environnement qui sera unique pour chaque client.
-                </p>
-              </Col>
-            </Row>
+            </p>
+          </Col>
+        </Row>
 
-          </div>
-        </div>
-      </Container>
-    )
+      </div>
+    </div>
+  )
+}
+
+class AboutPage extends Component {
+  render () {
+    return <Layout pageActive='apropos' headerPicture='/assets/headers/about.jpg' pageComponent={<About />} />
   }
 }
 

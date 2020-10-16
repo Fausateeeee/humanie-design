@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Layout from '../components/Layout'
+import { Layout } from '../components/index'
 // import { Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap'
 
 const Home = () => {
@@ -13,9 +13,7 @@ const Home = () => {
 class HomePage extends Component {
   render () {
     return (
-      <>
-        <Layout headerPicture='' pageComponent={<Home />} />
-      </>
+      <Layout headerPicture='' pageComponent={<Home />} />
     )
   }
 }
