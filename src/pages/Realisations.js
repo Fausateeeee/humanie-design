@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Row, Col, Container } from 'reactstrap'
-import HeaderPicture from '../components/HeaderPicture'
+import { HeaderPicture } from '../components/index'
 import ProjectThumbnail from '../components/ProjectThumbnail'
 import Project from '../components/Project'
 import PropTypes from 'prop-types'

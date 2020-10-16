@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import HeaderPicture from '../components/HeaderPicture'
+import { HeaderPicture } from '../components/index'
 import { Form, FormGroup, Button, Label, Input, Col, Row, Container } from 'reactstrap'
 // import { Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap'
 

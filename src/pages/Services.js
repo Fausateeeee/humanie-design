@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Col, Row, Container } from 'reactstrap'
-import HeaderPicture from '../components/HeaderPicture'
+import { HeaderPicture } from '../components/index'
 import PropTypes from 'prop-types'
 import SERVICES from '../data/services'
 // import { Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap'

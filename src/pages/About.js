@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Col, Row, Container } from 'reactstrap'
-import HeaderPicture from '../components/HeaderPicture'
+import { HeaderPicture } from '../components/index'
 
 class AboutPage extends Component {
   render () {
