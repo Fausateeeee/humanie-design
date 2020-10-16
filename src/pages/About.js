@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Col, Row, Container } from 'reactstrap'
 import HeaderPicture from '../components/HeaderPicture'
 
-class About extends Component {
+class AboutPage extends Component {
   render () {
     return (
       <Container>
@@ -48,4 +48,4 @@ class About extends Component {
   }
 }
 
-export default About
+export default AboutPage

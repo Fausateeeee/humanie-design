@@ -32,7 +32,7 @@ const ServiceSection = ({ service, isLeft }) => {
   )
 }
 
-class Services extends Component {
+class ServicesPages extends Component {
   render () {
     return (
       <Container>
@@ -66,4 +66,4 @@ ServiceSection.propTypes = {
   isLeft: PropTypes.bool
 }
 
-export default Services
+export default ServicesPages

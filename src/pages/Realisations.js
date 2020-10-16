@@ -3,6 +3,7 @@ import { Row, Col, Container } from 'reactstrap'
 import HeaderPicture from '../components/HeaderPicture'
 import ProjectThumbnail from '../components/ProjectThumbnail'
 import Project from '../components/Project'
+import PropTypes from 'prop-types'
 import PROJECTS from '../data/projects'
 
 const ProjectsNavigator = () => {
@@ -25,7 +26,7 @@ const ProjectExplorer = ({ id }) => {
   return <Project project={project} />
 }
 
-class Realisations extends Component {
+class RealisationsPage extends Component {
   render () {
     console.log(this.props.match.params.projectId)
 
@@ -38,4 +39,13 @@ class Realisations extends Component {
   }
 }
 
-export default Realisations
+export default RealisationsPage
+
+RealisationsPage.propTypes = {
+  match: {
+    params: {
+      projectId: PropTypes.number
+    }
+  }
+
+}

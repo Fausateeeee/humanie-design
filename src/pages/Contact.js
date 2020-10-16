@@ -51,7 +51,7 @@ const ContactForm = () => {
   )
 }
 
-class Contact extends Component {
+class ContactPage extends Component {
   render () {
     return (
       <Container>
@@ -79,4 +79,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact
+export default ContactPage
