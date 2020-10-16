@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Switch, Route, Router } from 'react-router-dom'
 import { history } from './utils/history'
-import Header from './components/Header'
 import {
   HomePage,
   AboutPage,
